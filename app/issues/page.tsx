@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Table } from '@radix-ui/themes';
 import Link from 'next/link';
 import prisma from '@/prisma/client';
-import { StatusBadge } from '../components';
+import { StatusBadge } from '@/app/components';
 
 const IssuesPage = async () => {
   const issues = await prisma.issue.findMany();
